@@ -31,6 +31,7 @@
     background: var(--color-surface);
     font-size: 13.33px;
     line-height: 1.5;
+    overflow-x: hidden;
   }
 
   /* Global focus-visible ring — WCAG 2.2 AA */

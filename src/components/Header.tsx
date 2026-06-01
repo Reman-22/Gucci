@@ -9,12 +9,12 @@ type Props = {
 
 const ACCOUNT_LINKS = [
   { label: "SIGN IN", tab: "login" },
-  { label: "MY ORDERS", tab: "orders" },
+  { label: "ORDERS", tab: "orders" },
   { label: "ACCOUNT SETTINGS", tab: "settings" },
   { label: "ADDRESS BOOK", tab: "address" },
   { label: "WALLET", tab: "wallet" },
   { label: "SAVED ITEMS", tab: "saved" },
-  { label: "MY APPOINTMENTS", tab: "appointments" },
+  { label: "APPOINTMENTS", tab: "appointments" },
 ];
 
 export function Header({ onSearchClick }: Props) {

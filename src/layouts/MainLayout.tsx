@@ -38,7 +38,7 @@ export function MainLayout() {
 
       <Header onSearchClick={() => setSearchOpen(true)} />
       
-      <main id="main" className="flex-grow relative">
+      <main id="main" className="flex-grow relative overflow-x-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
@@ -46,7 +46,7 @@ export function MainLayout() {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             exit={{ opacity: 0, y: -15, filter: "blur(4px)" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="w-full"
+            className="w-full max-w-full overflow-hidden"
           >
             <Outlet />
           </motion.div>
