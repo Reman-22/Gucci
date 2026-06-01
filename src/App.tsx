@@ -2,8 +2,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import { routes } from "./routes";
 
-const router = createBrowserRouter(routes);
-
+const router = createBrowserRouter(routes,{
+  basename: "/Gucci",
+}); 
 export default function App() {
   return (
     <CartProvider>
