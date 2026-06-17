@@ -78,17 +78,17 @@ export function SearchModal({ onClose }: Props) {
 
       {/* ───── Search Input Area ───── */}
       <div className="max-w-4xl mx-auto w-full px-6 pt-10 pb-8 text-center">
-        <label htmlFor="search-input" className="block text-[11px] tracking-[0.25em] uppercase text-[var(--color-ink-muted)] mb-4">
+        <label htmlFor="search-input" className="block text-[11px] tracking-[0.25em] uppercase text-[var(--color-ink-muted)] mb-4 transition-all duration-300">
           Search for:
         </label>
-        <div className="relative border-b border-[var(--color-ink)] pb-2 mb-8">
+        <div className="relative border-b border-[var(--color-rule)] pb-2 mb-8 transition-all duration-700 ease-[cubic-bezier(0.2,0.8,0.2,1)] focus-within:border-[var(--color-ink)] focus-within:scale-[1.02] focus-within:pb-4 group">
           <input
             id="search-input"
             ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full text-center text-[24px] md:text-[32px] font-light outline-none bg-transparent placeholder-[var(--color-rule)]"
+            className="w-full text-center text-[24px] md:text-[32px] font-light outline-none bg-transparent placeholder-[var(--color-rule)] transition-all duration-700 text-[var(--color-ink)] group-focus-within:font-normal"
             placeholder="Type your search here..."
           />
         </div>

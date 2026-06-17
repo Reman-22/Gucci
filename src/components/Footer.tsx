@@ -97,8 +97,17 @@ export function Footer() {
         </div>
         
         {/* ───── Very Bottom ───── */}
-        <div className="mt-24 pt-10 border-t border-[#222222] text-center text-[#777777] text-[10px] tracking-[0.25em] uppercase">
-          © {new Date().getFullYear()} OMRAN. All rights reserved.
+        <div className="mt-24 pt-10 border-t border-[#222222] flex flex-col items-center gap-10 overflow-hidden">
+          <p className="text-center text-[#777777] text-[10px] tracking-[0.25em] uppercase">
+            © {new Date().getFullYear()} MAISON ARTÉ. All rights reserved.
+          </p>
+          
+          {/* Website Name rendered at the very bottom in large bold font */}
+          <div className="w-full flex justify-center pb-2 select-none">
+            <span className="font-serif font-bold text-[56px] md:text-[140px] leading-[0.8] tracking-widest text-[#1a1a1a] opacity-80 whitespace-nowrap">
+              MAISON ARTÉ
+            </span>
+          </div>
         </div>
       </div>
     </footer>

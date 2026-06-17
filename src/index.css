@@ -31,7 +31,14 @@
     background: var(--color-surface);
     font-size: 13.33px;
     line-height: 1.5;
-    overflow-x: hidden;
+  }
+
+  /* Prevent text selection on headings and buttons for a clean app-like feel */
+  h1, h2, h3, h4, h5, h6 {
+    @apply select-none;
+  }
+  button, a {
+    @apply select-none cursor-pointer;
   }
 
   /* Global focus-visible ring — WCAG 2.2 AA */

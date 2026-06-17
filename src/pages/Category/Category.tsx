@@ -89,7 +89,7 @@ export function Category() {
   }, []);
 
   return (
-    <div className="bg-white overflow-x-hidden">
+    <div className="bg-white">
       {/* ───── Category header ───── */}
       <div className="px-4 md:px-6 pt-16 pb-8 md:pt-24 md:pb-12 border-b border-[var(--color-rule)]">
         <p className="text-[11px] tracking-[0.28em] uppercase text-[var(--color-ink-muted)] mb-4">Maison Arté</p>
@@ -100,7 +100,7 @@ export function Category() {
       </div>
 
       {/* ───── Filters & Sort Bar ───── */}
-      <div className="bg-white border-b border-[var(--color-rule)] relative z-20">
+      <div className="sticky top-[73px] z-30 bg-white/95 backdrop-blur-md border-b border-[var(--color-rule)] transition-all">
         
         {/* Row 1: Sub-category tabs */}
         <div className="px-4 md:px-6 py-3 flex items-center gap-1 overflow-x-auto scrollbar-none border-b border-[var(--color-rule)]">
@@ -209,7 +209,7 @@ export function Category() {
       <div 
         role="dialog" 
         aria-label="Filter products"
-        className={`fixed inset-y-0 right-0 z-[80] w-[360px] max-w-full bg-white border-l border-[var(--color-rule)] shadow-2xl flex flex-col transform transition-transform duration-300 ${
+        className={`fixed inset-y-0 right-0 z-[80] w-full max-w-sm bg-white border-l border-[var(--color-rule)] shadow-2xl flex flex-col transform transition-transform duration-700 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

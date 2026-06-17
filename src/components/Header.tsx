@@ -9,12 +9,12 @@ type Props = {
 
 const ACCOUNT_LINKS = [
   { label: "SIGN IN", tab: "login" },
-  { label: "ORDERS", tab: "orders" },
+  { label: "MY ORDERS", tab: "orders" },
   { label: "ACCOUNT SETTINGS", tab: "settings" },
   { label: "ADDRESS BOOK", tab: "address" },
   { label: "WALLET", tab: "wallet" },
   { label: "SAVED ITEMS", tab: "saved" },
-  { label: "APPOINTMENTS", tab: "appointments" },
+  { label: "MY APPOINTMENTS", tab: "appointments" },
 ];
 
 export function Header({ onSearchClick }: Props) {
@@ -51,7 +51,7 @@ export function Header({ onSearchClick }: Props) {
   return (
     <>
       <header
-        className={`absolute top-0 left-0 w-full z-50 border-b transition-colors duration-500 ${headerBg} ${textColor}`}
+        className={`fixed top-0 left-0 w-full z-50 border-b transition-colors duration-500 ${headerBg} ${textColor}`}
       >
         <div className="flex items-center justify-between px-4 md:px-8 py-5">
           
