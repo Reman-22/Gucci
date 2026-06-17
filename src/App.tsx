@@ -3,7 +3,7 @@ import { CartProvider } from "./context/CartContext";
 import { routes } from "./routes";
 
 const router = createBrowserRouter(routes,{
-  basename: "/gucci",
+  basename: "/Gucci",
 });
 
 export default function App() {
